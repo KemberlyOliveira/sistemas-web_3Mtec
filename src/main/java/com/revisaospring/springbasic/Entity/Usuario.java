@@ -25,8 +25,8 @@ public class Usuario {
     @Column(name = "telefne", nullable = false, length = 50)
     private int telefne;
     
-    @Column(name = "userename", nullable = false, length = 50)
-    private String userename;
+    @Column(name = "username", nullable = false, length = 50)
+    private String username;
 
     @Column(name = "password", nullable = false, length = 100)
     private String password;
@@ -39,11 +39,11 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(long id, String nome, int telefne, String userename, String password, String role) {
+    public Usuario(long id, String nome, int telefne, String username, String password, String role) {
         this.id = id;
         this.nome = nome;
         this.telefne = telefne;
-        this.userename = userename;
+        this.username = username;
         this.password = password;
         this.role = role;
     }

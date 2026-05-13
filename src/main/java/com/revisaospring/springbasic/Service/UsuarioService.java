@@ -17,7 +17,7 @@ public class UsuarioService {
     @Autowired 
     private PasswordEncoder encoder;
 
-    public void cadastraUsario (Usuario oUsuario){
+    public void cadastrarUsuario (Usuario oUsuario){
 
         //realizando a cripitrogarfia da senha
         oUsuario.setPassword(encoder.encode(oUsuario.getPassword()));
@@ -36,6 +36,5 @@ public class UsuarioService {
         return oUsuarioRepository.findAll();
     }
 
-
-    
+   
 }

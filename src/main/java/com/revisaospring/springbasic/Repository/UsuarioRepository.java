@@ -9,5 +9,5 @@ import com.revisaospring.springbasic.Entity.Usuario;
 
 @Repository
 public interface  UsuarioRepository extends JpaRepository<Usuario, Long>{
-    Optional<Usuario>findByUserename(String userename);
+    Optional<Usuario>findByUsername(String username);
 }
